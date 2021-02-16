@@ -3,6 +3,7 @@
 <%@ page import="model.User,model.Mutter,java.util.List"%>
 <%
 User loginUser = (User) session.getAttribute("loginUser");
+@SuppressWarnings("unchecked")
 List<Mutter> mutterList = (List<Mutter>) application.getAttribute("mutterList");
 %>
 <!DOCTYPE html>
